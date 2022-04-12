@@ -1,3 +1,4 @@
 // 0.1: initial version
+// 0.2: use pm2 to serve the application:  pm2 serve public/ 8081
 
-export const version = '&copy; 2022 MB version 0.1'
+export const version = '&copy; 2022 MB version 0.2'
