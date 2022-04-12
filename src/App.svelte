@@ -3,7 +3,7 @@
   import * as config from './config';
 
   let client = mqtt.connect(`ws://${config.MQTT_BROKER}`,
-    {clientId: config.CLIENT_ID});
+    {clientId: config.CLIENT_ID + '-' + Math.random().toString(16).substr(2, 8)});
 
   const sonoff = config.SONOFF_SWITCH;
 
